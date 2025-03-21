@@ -1,0 +1,1102 @@
+
+/*** Spinner Start ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+
+ .back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+/*** Spinner End ***/
+
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn.border-secondary {
+    transition: 0.5s;
+}
+
+.btn.border-secondary:hover {
+    background: var(--bs-secondary) !important;
+    color: var(--bs-white) !important;
+}
+
+/*** Topbar Start ***/
+.fixed-top {
+    transition: 0.5s;
+    background: var(--bs-white);
+    border: 0;
+}
+
+.topbar {
+    padding: 20px;
+    border-radius: 230px 100px;
+}
+
+.topbar .top-info {
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-link {
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-link a {
+    letter-spacing: 1px;
+}
+
+.topbar .top-link a small:hover {
+    color: var(--bs-secondary) !important;
+    transition: 0.5s;
+}
+
+.topbar .top-link a small:hover i {
+    color: var(--bs-primary) !important;
+}
+/*** Topbar End ***/
+
+
+
+
+/*** Navbar Start ***/
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.navbar {
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 1200px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        border: 0;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-primary);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light) !important;
+    border-radius: 10px !important;
+    transition: .5s;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+#searchModal .modal-content {
+    background: rgba(255, 255, 255, .8);
+}
+/*** Navbar End ***/
+
+/*** Hero Header ***/
+.hero-header {
+    position: relative;
+    background: url(../img/home\ bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1; /* টেক্সট বা অন্যান্য কন্টেন্টের জন্য */
+}
+
+.hero-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85); /* ইমেজের opacity কমানো */
+    z-index: -1; /* এটাকে ব্যাকগ্রাউন্ডে পাঠানো */
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    background: linear-gradient(rgba(217, 175, 92, 0.7), rgba(159, 135, 86, 0.7));
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: 1px solid var(--bs-white);
+    background: var(--bs-primary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    margin-right: 20px;
+}
+
+.carousel-control-prev {
+    margin-left: 20px;
+}
+
+.page-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/home\ img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+@media (min-width: 992px) {
+    .hero-header,
+    .page-header {
+        margin-top: 152px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-header,
+    .page-header {
+        margin-top: 97px !important;
+    }
+}
+/*** Hero Header end ***/
+
+
+/*** featurs Start ***/
+.featurs .featurs-item .featurs-icon {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.featurs .featurs-item .featurs-icon::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: var(--bs-secondary);
+    position: absolute;
+    bottom: -10px;
+    transform: translate(-50%);
+    transform: rotate(45deg);
+    background: var(--bs-secondary);
+    
+}
+/*** featurs End ***/
+
+
+/*** service Start ***/
+.service .service-item .service-content {
+    position: relative;
+    width: 250px; 
+    height: 130px; 
+    top: -50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+/*** service End ***/
+
+
+/*** Fruits Start ***/
+.fruite .tab-class .nav-item a.active {
+    background: var(--bs-secondary) !important;
+}
+
+.fruite .tab-class .nav-item a.active span {
+    color: var(--bs-white) !important; 
+}
+
+.fruite .fruite-categorie .fruite-name {
+    line-height: 40px;
+}
+
+.fruite .fruite-categorie .fruite-name a {
+    transition: 0.5s;
+}
+
+.fruite .fruite-categorie .fruite-name a:hover {
+    color: var(--bs-secondary);
+}
+
+.fruite .fruite-item {
+    height: 100%;
+    transition: 0.5s;
+}
+.fruite .fruite-item:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+
+.fruite .fruite-item .fruite-img {
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+
+.fruite .fruite-item .fruite-img img {
+    transition: 0.5s;
+}
+
+.fruite .fruite-item .fruite-img img:hover {
+    transform: scale(1.3);
+}
+/*** Fruits End ***/
+
+
+/*** vesitable Start ***/
+.vesitable .vesitable-item {
+    height: 100%;
+    transition: 0.5s;
+}
+
+.vesitable .vesitable-item:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+
+.vesitable .vesitable-item .vesitable-img {
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+
+.vesitable .vesitable-item .vesitable-img img {
+    transition: 0.5s;
+}
+
+.vesitable .vesitable-item .vesitable-img img:hover {
+    transform: scale(1.2);
+}
+
+.vesitable .owl-stage {
+    margin: 50px 0;
+    position: relative;
+}
+
+.vesitable .owl-nav .owl-prev {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+.vesitable .owl-nav .owl-prev:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.vesitable .owl-nav .owl-next {
+    position: absolute;
+    top: -8px;
+    right: 88px;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.vesitable .owl-nav .owl-next:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+/*** vesitable End ***/
+
+
+/*** Banner Section Start ***/
+.banner .banner-btn:hover {
+    background: var(--bs-primary);
+}
+/*** Banner Section End ***/
+
+
+/*** Facts Start ***/
+.counter {
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.counter i {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.counter h4 {
+    color: var(--bs-primary);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.counter h1 {
+    margin-bottom: 0;
+}
+/*** Facts End ***/
+
+
+/*** testimonial Start ***/
+.testimonial .owl-nav .owl-prev {
+    position: absolute;
+    top: -58px;
+    right: 0;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.testimonial .owl-nav .owl-prev:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.testimonial .owl-nav .owl-next {
+    position: absolute;
+    top: -58px;
+    right: 88px;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.testimonial .owl-nav .owl-next:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+/*** testimonial End ***/
+
+
+/*** Single Page Start ***/
+.pagination {
+    display: inline-block;
+}
+  
+.pagination a {
+    color: var(--bs-dark);
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid var(--bs-secondary);
+    margin: 0 4px;
+}
+  
+.pagination a.active {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+    border: 1px solid var(--bs-secondary);
+}
+  
+.pagination a:hover:not(.active) {background-color: var(--bs-primary)}
+
+.nav.nav-tabs .nav-link.active {
+    border-bottom: 2px solid var(--bs-secondary) !important;
+}
+/*** Single Page End ***/
+
+
+/*** Footer Start ***/
+.footer .footer-item .btn-link {
+    line-height: 35px;
+    color: rgba(255, 255, 255, .5);
+    transition: 0.5s;
+}
+
+.footer .footer-item .btn-link:hover {
+    color: var(--bs-secondary) !important;
+}
+
+.footer .footer-item p.mb-4 {
+    line-height: 35px;
+}
+/*** Footer End ***/
+
+
+.icon-img {
+    width: 120%; /* Ensures image fills the container */
+    height: 120%; /* Makes image responsive */
+    object-fit: cover; /* Maintains aspect ratio */
+    border-radius: 50%;
+}
+
+/* Remove yellow square background */
+.featurs-item {
+    background-color: transparent !important; /* Ensures no square background */
+}
+
+
+
+/* ----------------------------------------------------------------------------- 
+   # List Styles 
+----------------------------------------------------------------------------- */
+.list-section {
+    background-color: #f5f5f5;
+    margin: 50px 0; /* উপরে ও নিচে ৫০px গ্যাপ */
+    height: 200px; /* ডিফল্ট উচ্চতা ২০০px */
+    display: flex;
+    align-items: center; /* কন্টেন্ট কে ভার্টিকালি সেন্টার করার জন্য */
+}
+
+/* যখন স্ক্রিনের প্রস্থ 600px বা তার চেয়ে ছোট হবে */
+@media screen and (max-width: 600px) {
+    .list-section {
+        height: 300px; /* উচ্চতা ৩০০px হবে */
+    }
+}
+
+.list-box {
+    overflow: hidden;
+    letter-spacing: 0.5px;
+}
+
+.list-box .content h3 {
+    display: block;
+    line-height: 22px;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.list-box .content p {
+    margin-bottom: 0px;
+    opacity: 0.75;
+}
+
+.list-box .list-icon i {
+    display: block;
+    font-size: 24px;
+    margin-right: 15px;
+    color: #f28123;
+    width: 65px;
+    height: 75px;
+    text-align: center;
+    line-height: 60px;
+    border: 2px #f28123 dotted;
+    border-radius: 999px;
+}
+
+
+
+
+
+
+
+
+
+
+        /* স্ক্রিন সাইজ 600px এর কম হলে প্রতি সারিতে ২টি করে প্রোডাক্ট দেখাবে */
+        @media (max-width: 600px) {
+            .col-md-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* হোভার ইফেক্ট */
+        .fruite-img img {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .fruite-img img.hidden {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+
+
+
+
+ /* Font Muktii CSS */
+body {
+font-family: 'Mukti', sans-serif;
+}
+
+
+h1, h2, h3, p {
+font-family: 'Mukti', sans-serif;
+}
+
+
+
+
+.carousel-item img {
+    width: 500px; /* প্রস্থ 300px */
+    height: 380px; /* উচ্চতা 300px */
+    object-fit: cover; /* ছবিকে ঠিকঠাকভাবে ফিট করানোর জন্য */
+    border-radius: 10px; /* ছবির চারপাশে গোলাকার প্রভাবের জন্য (ঐচ্ছিক) */
+}
+
+
+.carousel-item a {
+    white-space: nowrap; /* টেক্সটকে এক লাইনে রাখতে বাধ্য করবে */
+    display: inline-block; /* ইনলাইন এলিমেন্ট হিসেবে কাজ করবে */
+}
+
+
+
+/* For category image */
+
+/* Style for Feature Items */
+.featurs-item {
+    margin: 20px; /* 20px margin around each feature item */
+    padding: 10px; /* 10px padding for internal spacing */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); /* 5px shadow effect */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.featurs-item:hover {
+    transform: translateY(-5px); /* Lift the box slightly */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
+}
+
+/* Image Styling */
+.icon-img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image doesn't stretch/distort */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Ensure the feature item has a consistent width on medium to larger screens */
+@media (min-width: 650px) {
+    .featurs-item {
+        width: 220px; /* Set the width of the feature item */
+        margin: 0 auto; /* Center the items */
+    }
+}
+
+
+
+
+
+.featurs-item h5 {
+    color: #3e4444;
+    margin-bottom: 10px; /* Add 10px space at the bottom */
+    margin-right: 10px;  /* Add 10px space on the right */
+}
+
+.featurs-item p {
+    color: #034f84;
+    margin-bottom: 10px; /* Add 10px space at the bottom */
+    margin-right: 10px;  /* Add 10px space on the right */
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    font-size: 16px;
+    margin-bottom: 2px;
+    position: relative;
+    top: -10px; /* 10px উপরে নিয়ে যাওয়া হলো */
+}
+
+
+.discount-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(2, 34, 42);
+}
+
+
+@media (max-width: 600px) {
+    .price-container {
+        display: flex;
+        flex-direction: column; /* দাম গুলো উপর-নিচে আসবে */
+        align-items: flex-start; /* বাম পাশে থাকবে */
+    }
+}
+
+
+.fruite-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.fruite-item .p-4 {
+    flex-grow: 1; /* সব div সমান height নিবে */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fruite-item .d-flex {
+    margin-top: auto; /* Add to Cart বাটন সবসময় নিচে থাকবে */
+}
+
+/* YELLOW BORDER যুক্ত করুন */
+.fruite-item .p-4 {
+    border-bottom: 4px solid yellow; /* সব div এর নিচে একই জায়গায় থাকবে */
+}
+
+
+
+.logoImg {
+    width: 85px;
+    margin-left: 20px;
+  
+}
+
+
+
+
+.custom-btn {
+    padding: 12px 60px;
+    background-color: #72fb09; /* Deep Orange */
+    color: #231d1d;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.custom-btn:hover {
+    background-color: #4cf504; /* Bright Orange */
+    transform: scale(1.05);
+    color: #090707;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .custom-btn {
+        font-size: 16px;
+        padding: 12px 50px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+/* Navbar Custom Style */
+.navbar-custom {
+    background-color: #000 !important; /* Set background to black */
+    padding-top: 10px; /* Reduced padding */
+    padding-bottom: 10px; /* Reduced padding */
+}
+
+/* Navbar Links White */
+.navbar-custom .navbar-nav .nav-link {
+    color: #fff !important;
+    padding-top: 5px; /* Adjusting padding to reduce height */
+    padding-bottom: 5px; /* Adjusting padding to reduce height */
+}
+
+/* Active Link Color */
+.navbar-custom .navbar-nav .nav-link.active {
+    color: #ddd !important;
+}
+
+/* Dropdown Menu Dark */
+.navbar-custom .navbar .dropdown-menu {
+    background-color: #333 !important;
+}
+
+/* Dropdown Links White */
+.navbar-custom .navbar .dropdown-menu .dropdown-item {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/* Hover Effect */
+.navbar-custom .navbar-nav .nav-link:hover, 
+.navbar-custom .navbar .dropdown-menu .dropdown-item:hover {
+    color: #b4b3b3 !important;
+}
+
+/* Navbar Toggler (Mobile Menu Icon) */
+.navbar-custom .navbar-toggler {
+    background-color: #13b1dd !important;
+    margin-right: 20px; /* Move the button 20px to the right */
+}
+
+.navbar-custom .navbar-toggler .fa-bars {
+    color: #fff !important; /* Set the color of the hamburger bars to white */
+}
+
+/* Navbar Collapse Styling */
+.navbar-custom .navbar-collapse {
+    background-color: #000 !important; /* Match the navbar color to footer's black */
+}
+
+/* Dropdown Menu Styling */
+.navbar-custom .dropdown-menu {
+    background-color: #333 !important; /* Slightly darker for dropdown */
+}
+
+/* Search Icon */
+.btn-search .fas.fa-search {
+    color: rgb(0, 200, 255) !important; /* Set the search icon color to blue */
+}
+
+/* Shopping Cart Icon */
+.fa-shopping-cart {
+    color: rgb(0, 195, 255) !important; /* Set the shopping cart icon color to blue */
+}
+/* Dropdown Menu Items Background Blue */
+.navbar .dropdown-menu .dropdown-item {
+    background-color: #d8ecfe !important; /* Blue background for the items */
+    
+    font-weight: 600;
+}
+
+/* Dropdown Item Hover Effect - Change Background to Darker Blue */
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #161414 !important; /* Darker blue on hover */
+    
+}
+
+
+
+/* Ensure Cart Button is Always Visible */
+.cart-icon {
+    position: absolute;
+    right: 80px; /* Adjust position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+    .cart-icon {
+        right: 60px; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-icon {
+        right: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #000; /* Set background to black */
+    color: #fff; /* Set text color to white for contrast */
+}
+
+.footer a {
+    color: #f0f0f0; /* Lighter color for links */
+}
+
+.footer a:hover {
+    color: #ffd700; /* Set hover color to a gold tone */
+}
+
+.footer .btn-outline-secondary {
+    border-color: #fff; /* Light border for buttons */
+}
+
+.footer .btn-outline-secondary:hover {
+    background-color: #00b7ff; /* Button background on hover */
+    color: #000; /* Text color on hover */
+}
+
+.footer-item h4 {
+    color: #fff; /* Ensure section titles are visible */
+}
+
+.footer-item p {
+    color: #ccc; /* Set paragraphs to a lighter grey for readability */
+}
+
+.footer-item a {
+    color: #f0f0f0; /* Light links for better contrast */
+}
+
+.footer-item a:hover {
+    color: #ffd700; /* Hover color for links */
+}
+
+
+
+.copyright {
+    background-color: #171515; /* Set background to black */
+    color: #fff; /* Set text color to white */
+}
+
+.copyright a {
+    color: #f0f0f0; /* Lighter color for links */
+}
+
+.copyright a:hover {
+    color: #ffd700; /* Hover color for links */
+}
+
+.copyright .text-light {
+    color: #fff; /* Ensure the text-light is white */
+}
+
+.copyright .fa-copyright {
+    color: #fff; /* Set the copyright icon color to white */
+}
+
+
+.floating-contact {
+    position: fixed;
+    bottom: 120px; /* Set to 120px from the bottom */
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .floating-contact .contact-options {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .floating-contact .contact-options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #0a80b7;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* 10px margin between icons */
+  }
+  
+  .floating-contact .contact-options a:hover {
+    background-color: #10a6e6;
+  }
+  
+  .floating-contact .contact-options a .bi {
+    font-size: 24px;
+  }
+  
+  /* Specific Colors for Each Icon */
+  .floating-contact .whatsapp-message {
+    background-color: #25d366;
+  }
+  
+  .floating-contact .whatsapp-message:hover {
+    background-color: #128c7e;
+  }
+  
+  .floating-contact .email-message {
+    background-color: #f39c12;
+  }
+  
+  .floating-contact .email-message:hover {
+    background-color: #e67e22;
+  }
+  
+  .floating-contact .help-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: #37d0f2;
+    color: rgb(124, 124, 124);
+    border-radius: 45%;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .floating-contact .help-button:hover {
+    background-color: #03daf6f9;
+  }
+  
+  .floating-contact .help-button .bi {
+    font-size: 24px;
+  }
+  
+  #contactOptions {
+    margin-top: 15px;
+  }
+  
+/*   
+cart messege showing */
+
+
+/* #cart-message {
+    font-size: 18px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(123, 254, 123); 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none; 
+    z-index: 1000; 
+}
+
+#cart-message.show {
+    display: flex; 
+} */
+
+
+.shop_captions {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    color: darkblue;
+}
+
+/* 
+custom paginations */
+
+
+
+.custom-pagination {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important; /* Ensures single row */
+    gap: 10px !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+.custom-pagination .page-item {
+    display: inline-block !important;
+}
+
+.custom-pagination .page-link {
+    color: #080808 !important;
+    border: 1px solid #00d4f0 !important;
+    transition: 0.3s !important;
+    padding: 8px 12px !important;
+}
+
+.custom-pagination .page-link:hover {
+    background-color: #0066ff !important;
+    color: #fff !important;
+}
+
+.custom-pagination .active .page-link {
+    background-color: #007bff !important;
+    color: white !important;
+    border: 1px solid #007bff !important;
+}
+

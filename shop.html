@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Fruitables - Vegetable Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Mukti:wght@400;700&display=swap" rel="stylesheet">
+
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            /* হোভার ইফেক্ট */
+            .fruite-img img {
+                transition: opacity 0.5s ease-in-out;
+            }
+    
+            .fruite-img img.hidden {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        </style>
+
+<!--Start of Tawk.to Script-->
+     <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/67daaf87b568d019092fc1f0/1imn3rb31';  /* এখানে আপনার Tawk.to Property ID বসান */
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+
+        
+
+        <!-- Navbar start -->
+<div class="fixed-top">
+    <div class="container-fluid topbar bg-info d-none d-lg-block">
+        <div class="d-flex justify-content-between">
+            <div class="top-info ps-2">
+                <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-white"></i> <a href="#" class="text-white">Narayanganj, Dhaka</a></small>
+                <small class="me-3">
+                    <i class="fab fa-whatsapp me-2 text-white"></i>
+                    <a href="https://wa.me/01884720828" class="text-white">01884720828</a>
+                </small>
+            </div>
+            <div class="top-link pe-2">
+                <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+                <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-xl navbar-custom">
+            <a href="index.html" class="navbar-brand">
+                <img class="logoImg" src="img/company logo/gift_any_time_logo-removebg-preview.png" alt="Gift Any Time BD">
+            </a>
+
+            <button class="navbar-toggler py-3 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="shop.html" class="nav-item nav-link">Shop</a>
+                   
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="cart.html" class="dropdown-item">Cart</a>
+                            <!-- <a href="chackout.html" class="dropdown-item">Checkout</a> -->
+                            <a href="shop.html" class="dropdown-item">শাড়ি (জামদানি + কাতান)</a>
+                            <a href="studentcombo.html" class="dropdown-item">স্টুডেন্ট শাড়ি কম্বো</a>
+                            <a href="hijab&churi.html" class="dropdown-item">হিজাব ও চুড়ি কম্বো</a>
+                            
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                     <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
+                </div>
+
+                <div class="d-flex m-3 me-0">
+                    <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search text-primary"></i>
+                    </button>
+                    <a href="cart.html" class="position-relative me-4 my-auto">
+                        <i class="fa fa-shopping-cart fa-2x"></i>
+                        <span id="cart-count" class="position-absolute bg-white rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Add cart button to mobile menu -->
+    <div class="d-block d-xl-none text-center py-2 bg-black">
+        <a href="cart.html" class="btn btn-primary w-100">
+            <i class="fa fa-shopping-cart me-2"></i> View Cart
+        </a>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Search Modal Start -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search for a category...">
+                <ul id="categoryList" class="list-unstyled mt-2"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Search Modal End -->
+
+<style>
+    #categoryList {
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        background-color: #f8f9fa;
+        top: 55px;
+    }
+
+    .category-item {
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .category-item:hover {
+        background-color: rgb(58, 81, 81);
+        color: #fff;
+    }
+
+    .category-item.active {
+        background-color: #19ce43;
+        color: #fff;
+    }
+
+    @media (max-width: 1000px) {
+        .carousel-container {
+            transition: transform 0.3s ease;
+        }
+        .carousel-move-down {
+            transform: translateY(220px);
+        }
+    }
+</style>
+
+<script>
+const categories = [
+    { name: 'Hijab Combo', category: 'hijab', image: 'img/Hero img/premium Hijab combo.jpg' },
+    { name: 'Silk Jamdani Combo', category: 'hijab', image: 'img/Hero img/premium Jamdani.jpg' },
+    { name: 'Churi + Hijab Combo', category: 'panjabi', image: 'img/products/product for hero image/churi hijab combo.jpg' },
+    { name: 'Soft Silk Katan Combo', category: '3pis', image: 'img/Hero img/Soft Silk Katan.jpg' }
+];
+
+const categoryList = document.getElementById('categoryList');
+const searchInput = document.getElementById('searchInput');
+
+// Show categories when user clicks on the search input
+searchInput.addEventListener('focus', () => {
+    categoryList.style.display = 'block';
+    updateCategoryList();
+});
+
+// Hide category list when clicking outside of it
+document.addEventListener('click', (e) => {
+    if (!categoryList.contains(e.target) && e.target !== searchInput) {
+        categoryList.style.display = 'none';
+    }
+});
+
+// Update the category list dynamically
+function updateCategoryList() {
+    categoryList.innerHTML = '';
+    categories.forEach(category => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('category-item');
+        listItem.textContent = category.name;
+        listItem.addEventListener('click', () => {
+            window.location.href = `shop.html?category=${category.category}`;
+        });
+        categoryList.appendChild(listItem);
+    });
+}
+
+// Ensure modal works properly
+document.addEventListener("DOMContentLoaded", function () {
+    const searchModal = new bootstrap.Modal(document.getElementById('searchModal'));
+    searchModal._element.addEventListener('hidden.bs.modal', function () {
+        categoryList.style.display = 'none';
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+        <div class="container-fluid fruite py-5">
+            <div class="container py-5">
+                <h4 class="shop_captions">জামদানি এবং কাতান শাড়ি</h4>
+
+                <div class="row g-4">
+                    <div class="col-lg-12">
+
+
+
+                        <!-- <div class="row g-4">
+                            <div class="col-6"></div>
+                            <div class="col-xl-3">
+                                <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
+                                    <label for="fruits">Default Sorting:</label>
+                                    <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light me-3" form="fruitform">
+                                        <option value="nothing">Nothing</option>
+                                        <option value="best-selling">Best Selling</option>
+                                        <option value="top-ten">Top Ten</option>
+                                        <option value="sharee">Sharee</option>
+                                        <option value="hijab">Hijab</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+
+
+
+    
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4 justify-content-center">
+                                    <!-- Product 1 -->
+                                    <div class="col-md-6 col-lg-3 product-item" data-category="sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+
+                                                <img src="img/products/big share package 1/jamdani print 01.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 1 - Image 1">
+                                                <img src="img/products/big share package 1/jamdani print 03.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 1 - Image 2">
+                                                <img src="img/products/big share package 1/jamdani print 03.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 1 - Image 3">
+
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Jamdani</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Jamdani Saree (Half Silk)</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৯ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-101</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2890tk</p>
+
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                data-id="Jamdani01" data-name="Jamdani Saree, big_S-101" data-price="2890" data-image="img/products/big share package 1/jamdani print 01.jpg">
+                                            <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                        </button>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Product 2 -->
+                                    <div class="col-md-6 col-lg-3 product-item" data-category="sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 2/soft silk katan 01/WhatsApp Image 2025-03-06 at 00.39.59_fcf9acdd.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 2 - Image 1">
+                                                <img src="img/products/big share package 2/soft silk katan 01/WhatsApp Image 2025-03-08 at 23.15.07_9677fdd5.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 2 - Image 2">
+                                                <img src="img/products/big share package 2/soft silk katan 01/WhatsApp Image 2025-03-08 at 23.15.08_93fa0a56.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 2 - Image 3">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Silk Katan</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান </h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৮ রকমের আইটেম</p>
+                                                <small> Code: big_S-102</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2890tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 01" data-name="Katan Saree, big_S-102" data-price="2890" data-image="img/products/big share package 2/soft silk katan 01/WhatsApp Image 2025-03-06 at 00.39.59_fcf9acdd.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Product 3 -->
+                                    <div class="col-md-6 col-lg-3 product-item" data-category="sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 2/soft silk katan 02/WhatsApp Image 2025-03-06 at 00.40.00_8ff5399f.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 3 - Image 1">
+                                                <img src="img/products/big share package 2/soft silk katan 02/WhatsApp Image 2025-03-08 at 23.15.14_856e4381.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 3 - Image 2">
+                                                <img src="img/products/big share package 2/soft silk katan 02/WhatsApp Image 2025-03-08 at 23.15.14_b984c59d.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 3 - Image 3">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Silk Katan 02</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৯ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-103</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2890tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 02" data-name="Katan Saree, big_S-103" data-price="2890" data-image="img/products/big share package 2/soft silk katan 02/WhatsApp Image 2025-03-06 at 00.40.00_8ff5399f.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+    
+                                    <!-- Product 4 -->
+                                    <div class="col-md-6 col-lg-3 product-item" data-category="sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 2/soft silk katan 03/WhatsApp Image 2025-03-06 at 00.40.02_205e6d0b.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 4 - Image 1">
+                                                <img src="img/products/big share package 2/soft silk katan 03/WhatsApp Image 2025-03-08 at 23.15.09_a1314ef9.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 4 - Image 2">
+                                                <img src="img/products/big share package 2/soft silk katan 03/WhatsApp Image 2025-03-08 at 23.15.09_e143d15d.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 4 - Image 3">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Silk Katan 03</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৯ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-104</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2890tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 03" data-name="Katan Saree, big_S-104" data-price="2890" data-image="img/products/big share package 2/soft silk katan 03/WhatsApp Image 2025-03-06 at 00.40.02_205e6d0b.jpg" class="img-fluid w-100 rounded-top default-img">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                        
+                                    <!-- Product 5 -->
+                                    <div class="col-md-6 col-lg-3 product-item" data-category="sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 2/soft silk katan 04/WhatsApp Image 2025-03-06 at 00.40.04_c3030e8a.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 5 - Image 1">
+                                                <img src="img/products/big share package 2/soft silk katan 04/WhatsApp Image 2025-03-08 at 23.15.09_1e40cff7.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 5 - Image 2">
+                                                <img src="img/products/big share package 2/soft silk katan 04/WhatsApp Image 2025-03-08 at 23.15.10_8c6d5cb0.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 5 - Image 3">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Katan Saree 04</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৯ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-105</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2890tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 04" data-name="Katan Saree, big_S-105" data-price="2890" data-image="img/products/big share package 2/soft silk katan 04/WhatsApp Image 2025-03-06 at 00.40.04_c3030e8a.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                        
+                                    <!-- Product 6 -->
+                                    <div class="col-md-6 col-lg-3 product-item" data-category="sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 2/soft silk katan 05/WhatsApp Image 2025-03-06 at 00.40.04_d0317518.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 6 - Image 1">
+                                                <img src="img/products/big share package 2/soft silk katan 05/WhatsApp Image 2025-03-08 at 23.15.08_1bd14481.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 6 - Image 2">
+                                                <img src="img/products/big share package 2/soft silk katan 05/WhatsApp Image 2025-03-08 at 23.15.08_f0207c2c.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 6 - Image 3">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Katan Saree 05</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৯ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-106</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2890tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 05" data-name="Katan Saree, big_S-106" data-price="2890" data-image="img/products/big share package 2/soft silk katan 05/WhatsApp Image 2025-03-06 at 00.40.04_d0317518.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    
+                                    <!-- Product 7 -->
+                                    <div class="col-md-6 col-lg-3 product-item" data-category="sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 3/kg6/WhatsApp Image 2025-03-06 at 01.55.31_a629e8fd.jpg" class="img-fluid w-100 rounded-top default-img" class="img-fluid w-100 rounded-top default-img" alt="Product 7 - Image 1">
+                                                <img src="img/products/big share package 3/kg6/WhatsApp Image 2025-03-08 at 23.15.14_856e4381.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 7 - Image 2">
+                                                <img src="img/products/big share package 3/kg6/WhatsApp Image 2025-03-08 at 23.15.14_b984c59d.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 7 - Image 3">
+                                            </div>
+
+                                            
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 06 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৭ রকমের আইটেম</p>
+                                                <small> Code: big_S-107</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2590tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 06" data-name="Katan Saree, big_S-107" data-price="2590" data-image="img/products/big share package 3/kg6/WhatsApp Image 2025-03-06 at 01.55.31_a629e8fd.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+
+
+                                        
+                                    <!-- Product 8 -->
+                                    <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 3/soft silk katan 01/WhatsApp Image 2025-03-06 at 01.55.32_5da04278.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 8 - Image 1">
+                                                <img src="img/products/big share package 3/soft silk katan 01/WhatsApp Image 2025-03-08 at 23.15.13_377272ba.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 8 - Image 2">
+                                                <img src="img/products/big share package 3/soft silk katan 01/WhatsApp Image 2025-03-08 at 23.15.13_45a81cdb.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 8 - Image 3">
+                                            </div>
+
+                                                
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 07 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৭ রকমের আইটেম</p>
+                                                <small> Code: big_S-108</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2590tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 07" data-name="Katan Saree, big_S-108" data-price="2590" data-image="img/products/big share package 3/soft silk katan 01/WhatsApp Image 2025-03-06 at 01.55.32_5da04278.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                     <!-- Product 9 -->
+                                     <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 3/soft silk katan 02/WhatsApp Image 2025-03-06 at 01.55.30_2de502cd.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 9 - Image 1">
+                                                <img src="img/products/big share package 3/soft silk katan 02/WhatsApp Image 2025-03-08 at 23.15.10_323679e9.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 9 - Image 2">
+                                                <img src="img/products/big share package 3/soft silk katan 02/WhatsApp Image 2025-03-08 at 23.15.10_da10758b.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 9 - Image 3">
+                                            </div>
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 08 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৭ রকমের আইটেম</p>
+                                                <small> Code: big_S-109</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2590tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 08" data-name="Katan Saree, big_S-109" data-price="2590" data-image="img/products/big share package 3/soft silk katan 02/WhatsApp Image 2025-03-06 at 01.55.30_2de502cd.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                         <!-- Product 10 -->
+                                    <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 3/soft silk katan 03/WhatsApp Image 2025-03-06 at 01.55.30_c31e2834.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 10 - Image 1">
+                                                <img src="img/products/big share package 3/soft silk katan 03/WhatsApp Image 2025-03-08 at 23.15.12_6abc8b18.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 10 - Image 2">
+                                                <img src="img/products/big share package 3/soft silk katan 03/WhatsApp Image 2025-03-08 at 23.15.12_b721f1f9.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 10 - Image 3">
+                                            </div>
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 09 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৭ রকমের আইটেম</p>
+                                                <small> Code: big_S-110</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2590tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 09" data-name="Katan Saree, big_S-110" data-price="2590" data-image="img/products/big share package 3/soft silk katan 03/WhatsApp Image 2025-03-06 at 01.55.30_c31e2834.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                         <!-- Product 11 -->
+                                    <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 3/soft silk katan 04/WhatsApp Image 2025-03-06 at 01.55.31_8fd4ee6d.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 11 - Image 1">
+                                                <img src="img/products/big share package 3/soft silk katan 04/WhatsApp Image 2025-03-08 at 23.15.11_0f69abf2.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 11 - Image 2">
+                                                <img src="img/products/big share package 3/soft silk katan 04/WhatsApp Image 2025-03-08 at 23.15.11_8147ff09.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 11 - Image 3">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 10 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৭ রকমের আইটেম</p>
+                                                <small> Code: big_S-111</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2590tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 10" data-name="Katan Saree, big_S-111" data-price="2590" data-image="img/products/big share package 3/soft silk katan 04/WhatsApp Image 2025-03-06 at 01.55.31_8fd4ee6d.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                     <!-- Product 12 -->
+                                     <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/big share package 3/soft silk katan 05/WhatsApp Image 2025-03-06 at 01.55.31_32872fac.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 12 - Image 1">
+                                                <img src="img/products/big share package 3/soft silk katan 05/WhatsApp Image 2025-03-08 at 23.15.11_7d96d06e.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 12 - Image 2">
+                                                <img src="img/products/big share package 3/soft silk katan 05/WhatsApp Image 2025-03-08 at 23.15.12_9d9df3cc.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 12 - Image 3">
+                                            </div>
+
+                            
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 11 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p>একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১৭ রকমের আইটেম</p>
+                                                <small> Code: big_S-112</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">2590tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 11" data-name="Katan Saree, big_S-112" data-price="2590" data-image="img/products/big share package 3/soft silk katan 05/WhatsApp Image 2025-03-06 at 01.55.31_32872fac.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                       <!-- Product 13 -->
+                                       <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 1/IMG-20241019-WA0050.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 13 - Image 1">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 1/WhatsApp Image 2025-03-08 at 23.15.10_323679e9.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 13 - Image 2">
+                                                <img src="img/products/big share package 3/soft silk katan 05/WhatsApp Image 2025-03-08 at 23.15.12_9d9df3cc.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 13 - Image 3">
+                                            </div>
+
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 12 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p> একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১২ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-113</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">1990tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 12" data-name="Katan Saree, big_S-113" data-price="1990" data-image="img/products/Medium share package 5/premium soft silk katan sharee 1/IMG-20241019-WA0050.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                       <!-- Product 14 -->
+                                       <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 02/IMG_20240822_212512.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 14 - Image 1">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 02/WhatsApp Image 2025-03-08 at 23.15.11_7d96d06e.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 13 - Image 2">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 02/WhatsApp Image 2025-03-08 at 23.15.12_9d9df3cc.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 14 - Image 3">
+                                            </div>
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 13 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p> একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১২ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-114</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">1990tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 13" data-name="Katan Saree, big_S-114" data-price="1990" data-image="img/products/Medium share package 5/premium soft silk katan sharee 02/IMG_20240822_212512.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                       <!-- Product 15 -->
+                                       <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 03/IMG_20250116_134302.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 15 - Image 1">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 03/WhatsApp Image 2025-03-08 at 23.15.07_9677fdd5.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 15 - Image 2">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 03/WhatsApp Image 2025-03-08 at 23.15.08_93fa0a56.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 15 - Image 3">
+                                            </div>
+
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 14 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p> একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১২ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-115</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">1990tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 14" data-name="Katan Saree, big_S-115" data-price="1990" data-image="img/products/Medium share package 5/premium soft silk katan sharee 03/IMG_20250116_134302.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                       <!-- Product 16 -->
+                                       <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 4/IMG_20241002_123355.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 16 - Image 1">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 4/WhatsApp Image 2025-03-08 at 23.15.14_856e4381.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 16 - Image 2">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 4/WhatsApp Image 2025-03-08 at 23.15.14_b984c59d.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 16 - Image 3">
+                                            </div>
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 15 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p> একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১২ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-116</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">1990tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 15" data-name="Katan Saree, big_S-116" data-price="1990" data-image="img/products/Medium share package 5/premium soft silk katan sharee 4/IMG_20241002_123355.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    
+                                       <!-- Product 17 -->
+                                       <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 05/IMG_20250116_210216.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 17 - Image 1">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 05/WhatsApp Image 2025-03-08 at 23.15.09_1e40cff7.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 17 - Image 2">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 05/WhatsApp Image 2025-03-08 at 23.15.10_8c6d5cb0.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 17 - Image 3">
+                                            </div>
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 16 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p> একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১২ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-117</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">1990tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 16" data-name="Katan Saree, big_S-117" data-price="1990" data-image="img/products/Medium share package 5/premium soft silk katan sharee 05/IMG_20250116_210216.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                    
+                                       <!-- Product 18 -->
+                                       <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 06/WhatsApp Image 2025-03-08 at 23.15.09_a1314ef9.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 18 - Image 1">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 06/IMG-20240928-WA0007.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 18 - Image 2">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 06/WhatsApp Image 2025-03-08 at 23.15.09_e143d15d.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 18 - Image 3">
+                                            </div>
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 17 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p> একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১২ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-118</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">1990tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 17" data-name="Katan Saree, big_S-118" data-price="1990" data-image="img/products/Medium share package 5/premium soft silk katan sharee 06/WhatsApp Image 2025-03-08 at 23.15.09_a1314ef9.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                    
+                                       <!-- Product 19 -->
+                                       <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 07/IMG-20241019-WA0008.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 19 - Image 1">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 07/WhatsApp Image 2025-03-08 at 23.15.12_6abc8b18.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 19 - Image 2">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 07/WhatsApp Image 2025-03-08 at 23.15.12_b721f1f9.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 19 - Image 3">
+                                            </div>
+
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 18 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p> একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১২ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-119</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">1990tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 18" data-name="Katan Saree, big_S-119" data-price="1990" data-image="img/products/Medium share package 5/premium soft silk katan sharee 06/WhatsApp Image 2025-03-08 at 23.15.09_a1314ef9.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    
+                                       <!-- Product 20 -->
+                                       <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 08/IMG-20241019-WA0044.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 20 - Image 1">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 08/WhatsApp Image 2025-03-08 at 23.15.11_0f69abf2.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 20 - Image 2">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 08/WhatsApp Image 2025-03-08 at 23.15.11_8147ff09.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 20 - Image 3">
+                                            </div>
+
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 19 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p> একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১২ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-120</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">1990tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 19" data-name="Katan Saree, big_S-120" data-price="1990" data-image="img/products/Medium share package 5/premium soft silk katan sharee 08/IMG-20241019-WA0044.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                    
+                                    
+                                       <!-- Product 21 -->
+                                       <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 10/IMG-20241019-WA0051.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 21 - Image 1">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 10/WhatsApp Image 2025-03-08 at 23.15.13_377272ba.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 21 - Image 2">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 10/WhatsApp Image 2025-03-08 at 23.15.13_45a81cdb.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 21 - Image 3">
+                                            </div>
+
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 20 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p> একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১২ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-121</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">1990tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 20" data-name="Katan Saree, big_S-121" data-price="1990" data-image="img/products/Medium share package 5/premium soft silk katan sharee 10/IMG-20241019-WA0051.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    
+                                    
+                                       <!-- Product 22 -->
+                                       <div class="col-md-6 col-lg-3 product-item" data-category="hijab sharee">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 11/IMG-20241019-WA0047.jpg" class="img-fluid w-100 rounded-top default-img" alt="Product 22 - Image 1">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 11/WhatsApp Image 2025-03-08 at 23.15.08_1bd14481.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 22 - Image 2">
+                                                <img src="img/products/Medium share package 5/premium soft silk katan sharee 11/WhatsApp Image 2025-03-08 at 23.15.08_f0207c2c.jpg" class="img-fluid w-100 rounded-top hidden" alt="Product 22 - Image 3">
+                                            </div>
+
+
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;"> Katan Saree 21 </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Katan Saree - সফ্ট সিল্ক কাতান</h4>
+                                                <p> একটি এক্সক্লুসিভ গিফট প্যাকেজ যার মধ্যে রয়েছে ১২ রকমের আইটেম ✨</p>
+                                                <small> Code: big_S-122</small>
+                                                <p class="text-dark fs-5 fw-bold mb-0">1990tk</p>
+                                                <button class="btn border border-secondary rounded-pill px-3 text-primary add-to-cart-btn mt-3"
+                                                    data-id="Katan Saree 21" data-name="Katan Saree, big_S-122" data-price="1990" data-image="img/products/Medium share package 5/premium soft silk katan sharee 11/IMG-20241019-WA0047.jpg">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    
+                                    <div class="row mt-5 justify-content-center">
+                                        <div class="col-auto">
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination custom-pagination">
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="studentcombo.html" aria-label="Previous">
+                                                            <span>&laquo;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="studentcombo.html">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="hijab&churi.html">2</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="hijab&churi.html" aria-label="Next">
+                                                            <span>&raquo;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+
+                                </div> <!-- row end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div id="cart-message">
+            <h6>আপনার পণ্যটি কার্টে যোগ করা হয়েছে!</h6>
+        </div> -->
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // হোভার ইফেক্টের জন্য ইমেজ চেঞ্জ লজিক
+                const productItems = document.querySelectorAll(".product-item");
+    
+                productItems.forEach((product) => {
+                    const images = product.querySelectorAll(".fruite-img img");
+                    let currentIndex = 0;
+    
+                    product.addEventListener("mouseenter", () => {
+                        const interval = setInterval(() => {
+                            images[currentIndex].classList.add("hidden");
+                            currentIndex = (currentIndex + 1) % images.length;
+                            images[currentIndex].classList.remove("hidden");
+                        }, 2000);
+    
+                        product.addEventListener("mouseleave", () => {
+                            clearInterval(interval);
+                            images.forEach((img, index) => {
+                                if (index === 0) {
+                                    img.classList.remove("hidden");
+                                } else {
+                                    img.classList.add("hidden");
+                                }
+                            });
+                            currentIndex = 0;
+                        }, { once: true });
+                    });
+                });
+    
+                // সর্টিং অপশন
+                const sortOptions = document.getElementById("fruits");
+                sortOptions.addEventListener("change", function () {
+                    const selectedCategory = this.value.toLowerCase();
+                    const products = document.querySelectorAll(".product-item");
+    
+                    products.forEach(product => {
+                        const productCategory = product.getAttribute("data-category").toLowerCase();
+                        if (selectedCategory === "nothing" || productCategory.includes(selectedCategory)) {
+                            product.style.display = "block";
+                        } else {
+                            product.style.display = "none";
+                        }
+                    });
+                });
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        <!-- Fruits Shop End-->
+
+        <!-- Tastimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+
+
+                <div class="testimonial-header text-center">
+                    <h4 class="text-primary">Our Testimonial</h4>
+                    <h1 class=" mb-5 text-dark">আমাদের ক্লায়েন্টদের রিভিউ!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+
+
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">জামদানি শাড়ি
+                         "অসাধারণ শাড়ি! ডিজাইন খুবই সুন্দর এবং আরামদায়ক।"
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/staff/maria brankovic.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Mara Brankovic</h4>
+                                    <p class="m-0 pb-3">Weeding Planner</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">আমার বিয়ে উপলক্ষে জামদানি শাড়ি কিনেছিলাম, খুব ভালো মানের।" "খুবই ভালো কাপড়, রঙের সমন্বয়ও দারুণ।"
+                                    
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/staff/Nisha Choudhury.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Nishi K</h4>
+                                    <p class="m-0 pb-3">House Wife</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">চুড়ি আর হিজাবের সেটটি একদম মনের মতো। বেশ আরামদায়ক। আমার বউ ভীষণ পছন্দ করছে
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/staff/Ibrahim.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Ibrahim Khalil</h4>
+                                    <p class="m-0 pb-3">Degital Creator</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tastimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid text-white-50 footer pt-1 mt-1">
+            <div class="container py-1">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <h3 class="text-info mt-2">Gift Any Time BD</h1>
+                                <p class="text-secondary mb-0">eCommerce Based Sharee Panjabi & Hijab Shop in BD</p>
+                            </a>
+                        </div>
+
+
+                        <div class="col-lg-6">
+
+
+                            <div class="position-relative mx-auto mt-2" style="max-width: 400px;">
+                                <input id="emailInput" class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="email" placeholder="Your Email">
+                                <a id="emailLink" href="#" class="btn btn-info border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</a>
+                            </div>
+                            
+                            <script>
+                                document.getElementById("emailLink").addEventListener("click", function(event) {
+                                    event.preventDefault(); // Prevent the default action
+                                    let userEmail = document.getElementById("emailInput").value;
+                            
+                                    // Email validation
+                                    let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                                    if (!emailRegex.test(userEmail)) {
+                                        alert("Enter a valid email!");
+                                        return;
+                                    }
+                            
+                                    // Construct the mailto link and set it as the href attribute
+                                    let mailtoLink = `mailto:ferdous2024@gmail.com?subject=New Subscriber&body=New subscriber email: ${userEmail}`;
+                                    this.setAttribute("href", mailtoLink);
+                                    // Optionally trigger the email sending process
+                                    window.location.href = mailtoLink;
+                                });
+                            </script>
+                            
+                            
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex justify-content-end pt-3">
+                              
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" target="_blank" href="https://www.facebook.com/share/15TbCDqdxu/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" target="_blank" href="https://wa.me/8801884720828"><i class="fab fa-whatsapp"></i></a>
+
+       
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Why People Like us!</h4>
+                            <p class="mb-4">আমরা উচ্চমানের পণ্য এবং সেবা প্রদান করি, যেখানে গ্রাহক সন্তুষ্টি আমাদের সর্বোচ্চ অগ্রাধিকার। আমাদের নিষ্ঠা এবং দক্ষতা 
+                            </p>
+                            <a href="#" class="btn border-secondary py-2 px-4 rounded-pill text-info">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Shop Info</h4>
+                            <a class="btn-link" href="#">About Us</a>
+                            <a class="btn-link" href="#">Contact Us</a>
+                            <a class="btn-link" href="#">Privacy Policy</a>
+                            <a class="btn-link" href="#">Terms & Condition</a>
+                            <a class="btn-link" href="#">Return Policy</a>
+                            <a class="btn-link" href="#">FAQs & Help</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Account</h4>
+                            <a class="btn-link" href="#">My Account</a>
+                            <a class="btn-link" href="#">Shop details</a>
+                            <a class="btn-link" href="#">Shopping Cart</a>
+                            <a class="btn-link" href="#">Wishlist</a>
+                            <a class="btn-link" href="#">Order History</a>
+                            <a class="btn-link" href="#">International Orders</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Contact</h4>
+                            <p>Address: 1429 Netus Rd, NY 48247</p>
+                            <p>Email: <a href="mailto:mdmohsin1717@gmail.com">mdmohsin1717@gmail.com</a></p>
+                            <p>Phone: <a href="tel:+8801884720828">+88 01884720828</a> (WhatsApp, bKash, Nogod, Rocket)</p>
+                            <p>Islami Bank Account: 20502920203775105</p>
+                            <a href="https://www.facebook.com/share/15TbCDqdxu/?mibextid=wwXIfr" target="_blank" class="btn btn-primary py-2 px-4 rounded-pill text-white">Share on Facebook</a>
+                          
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Gift Any Time BD</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://www.facebook.com/FerdousMohammad29/">Ferdous</a> Distributed By <a class="border-bottom" href="https://elitemsy.com/">Anils World</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+
+        <div class="floating-contact">
+            <a href="#" class="help-button" id="helpButton">
+              <i class="bi bi-question-circle"></i>
+            </a>
+            <div class="contact-options" id="contactOptions">
+              <a
+                href="tel:+8801884720828"
+                class="phone-call margeIcon"
+                target="_blank"
+              >
+                <i class="bi bi-telephone-fill"></i>
+              </a>
+              <a
+                href="https://wa.me/+8801884720828"
+                class="whatsapp-message margeIcon"
+                target="_blank"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a
+                href="mailto:help@giftanytimebd.com"
+                class="email-message margeIcon"
+                target="_blank"
+              >
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+    
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

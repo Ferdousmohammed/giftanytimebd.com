@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Fruitables - Vegetable Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Mukti:wght@400;700&display=swap" rel="stylesheet">
+
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+            <!--Start of Tawk.to Script-->
+       <script type="text/javascript">
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+      (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/67daaf87b568d019092fc1f0/1imn3rb31';  /* এখানে আপনার Tawk.to Property ID বসান */
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+
+
+
+        <!-- Navbar start -->
+        <div class="fixed-top">
+            <div class="container-fluid topbar bg-info d-none d-lg-block">
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-white"></i> <a href="#" class="text-white">Narayanganj, Dhaka</a></small>
+                        <small class="me-3">
+                            <i class="fab fa-whatsapp me-2 text-white"></i>
+                            <a href="https://wa.me/01884720828" class="text-white">01884720828</a>
+                        </small>
+                    </div>
+                    <div class="top-link pe-2">
+                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container-fluid px-0">
+                <nav class="navbar navbar-expand-xl navbar-custom">
+                    <a href="index.html" class="navbar-brand">
+                        <img class="logoImg" src="img/company logo/gift_any_time_logo-removebg-preview.png" alt="Gift Any Time BD">
+                    </a>
+        
+                    <button class="navbar-toggler py-3 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="shop.html" class="nav-item nav-link">Shop</a>
+                           
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="cart.html" class="dropdown-item">Cart</a>
+                                    <!-- <a href="chackout.html" class="dropdown-item">Checkout</a> -->
+                                    <a href="shop.html" class="dropdown-item">শাড়ি (জামদানি + কাতান)</a>
+                                    <a href="studentcombo.html" class="dropdown-item">স্টুডেন্ট শাড়ি কম্বো</a>
+                                    <a href="hijab&churi.html" class="dropdown-item">হিজাব ও চুড়ি কম্বো</a>
+                                    
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                             <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
+                        </div>
+        
+                        <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal">
+                                <i class="fas fa-search text-primary"></i>
+                            </button>
+                            <a href="cart.html" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-cart fa-2x"></i>
+                                <span id="cart-count" class="position-absolute bg-white rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        
+            <!-- Add cart button to mobile menu -->
+            <div class="d-block d-xl-none text-center py-2 bg-black">
+                <a href="cart.html" class="btn btn-primary w-100">
+                    <i class="fa fa-shopping-cart me-2"></i> View Cart
+                </a>
+            </div>
+        </div>
+        <!-- Navbar End -->
+        
+        <!-- Search Modal Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search for a category...">
+                        <ul id="categoryList" class="list-unstyled mt-2"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Modal End -->
+        
+        <style>
+            #categoryList {
+                display: block;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+                background-color: #f8f9fa;
+                top: 55px;
+            }
+        
+            .category-item {
+                padding: 10px;
+                border-radius: 8px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+        
+            .category-item:hover {
+                background-color: rgb(58, 81, 81);
+                color: #fff;
+            }
+        
+            .category-item.active {
+                background-color: #19ce43;
+                color: #fff;
+            }
+        
+            @media (max-width: 1000px) {
+                .carousel-container {
+                    transition: transform 0.3s ease;
+                }
+                .carousel-move-down {
+                    transform: translateY(220px);
+                }
+            }
+        </style>
+        
+        <script>
+        const categories = [
+            { name: 'Hijab Combo', category: 'hijab', image: 'img/Hero img/premium Hijab combo.jpg' },
+            { name: 'Silk Jamdani Combo', category: 'hijab', image: 'img/Hero img/premium Jamdani.jpg' },
+            { name: 'Churi + Hijab Combo', category: 'panjabi', image: 'img/products/product for hero image/churi hijab combo.jpg' },
+            { name: 'Soft Silk Katan Combo', category: '3pis', image: 'img/Hero img/Soft Silk Katan.jpg' }
+        ];
+        
+        const categoryList = document.getElementById('categoryList');
+        const searchInput = document.getElementById('searchInput');
+        
+        // Show categories when user clicks on the search input
+        searchInput.addEventListener('focus', () => {
+            categoryList.style.display = 'block';
+            updateCategoryList();
+        });
+        
+        // Hide category list when clicking outside of it
+        document.addEventListener('click', (e) => {
+            if (!categoryList.contains(e.target) && e.target !== searchInput) {
+                categoryList.style.display = 'none';
+            }
+        });
+        
+        // Update the category list dynamically
+        function updateCategoryList() {
+            categoryList.innerHTML = '';
+            categories.forEach(category => {
+                const listItem = document.createElement('li');
+                listItem.classList.add('category-item');
+                listItem.textContent = category.name;
+                listItem.addEventListener('click', () => {
+                    window.location.href = `shop.html?category=${category.category}`;
+                });
+                categoryList.appendChild(listItem);
+            });
+        }
+        
+        // Ensure modal works properly
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchModal = new bootstrap.Modal(document.getElementById('searchModal'));
+            searchModal._element.addEventListener('hidden.bs.modal', function () {
+                categoryList.style.display = 'none';
+            });
+        });
+        </script>
+        
+        
+        
+        
+        
+
+
+        <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white mt-4">Cart</h1>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-white">Cart</li>
+            </ol>
+        </div>
+        <!-- Single Page Header End -->
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <!-- Cart Page Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+
+                
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Products</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+        
+                        <tbody id="cart-table-body">
+                            <!-- Products will be loaded dynamically here -->
+                        </tbody>
+
+
+                                    
+                                            
+        <tfoot>
+            <tr>
+                <td scope="row">
+                    <div class="d-flex align-items-center">
+                     
+                    </div>
+                </td>
+                <td><h3 class="mb-0 mt-4 mb-2"><strong>Cart Total</strong></h3></td>
+                <td></td>
+                <td></td>
+                <td><p id="cart-total" class="mb-0 fw-bold">৳0.00</p></td>
+                <td></td>
+            </tr>
+        </tfoot>
+        
+                    </table>
+                </div>
+
+
+
+
+                
+
+
+
+
+
+
+
+        <!-- Checkout Page Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <h1 class="mb-4">Billing Details</h1>
+                <form action="#">
+                    <div class="row g-5">
+
+
+
+                        <div class="col-md-12 col-lg-6 col-xl-7">
+
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="form-item">
+                                        <label class="form-label my-3"> Name <sup>*</sup></label>
+                                        <input type="text" class="form-control"  placeholder="Your Full Name" required>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-item">
+                                <p style="color: rgb(0, 186, 248);" class="help-text mt-3">
+                                    <i class="fa fa-money-bill-wave"></i> ৫০ টাকা এডভান্স দিয়ে ডিসকাউন্ট নিতে চাই ✅
+                                    <br>
+
+
+                                    আপনি যদি ৫০ টাকা এডভান্স দিয়ে অর্ডার কনফার্ম করলে সেক্ষেত্রে আপনি প্রোডাক্টের মূল্য থেকে ৫০ টাকা ডিসকাউন্ট পাবে
+                                </p>
+
+                                    <!-- Cash on Delivery Options -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="advance-payment" id="advance-yes" value="yes">
+                                        <label class="form-check-label" for="advance-yes">
+                                            ঠিক আছে (Cart Total - 50 TK)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="advance-payment" id="advance-no" value="no">
+                                        <label class="form-check-label" for="advance-no">
+                                            না, ধন্যবাদ
+                                        </label>
+                                    </div>
+                                <label class="form-label my-3">Mobile<sup>*</sup></label>
+                                <input type="tel" class="form-control" required>
+                            
+                        
+                            
+                            </div>
+
+
+                               <!-- Delivery Options -->
+
+                               <p style="color: red;" class="help-text mt-3">
+                                <i class="fa fa-truck"></i> আপনার ডেলিভারি লোকেশন যাচাই করে আমাদের প্রতিনিধি ডেলিভারি চার্জ যোগ করবেন।
+                            </p>
+                               <p style="color: green;" class="help-text mt-3">অথবা ম্যানুয়ালি লোকেশন সিলেক্ট করুন!</p>
+                               <div class="form-check">
+                                <input class="form-check-input" type="radio" name="delivery-location" id="dhaka-inside" value="dhaka-inside">
+                                <label class="form-check-label" for="dhaka-inside">
+                                    ঢাকার ভিতরে _ 60 tk (Cart Total + 60 TK)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="delivery-location" id="dhaka-outside" value="dhaka-outside">
+                                <label class="form-check-label" for="dhaka-outside">
+                                    ঢাকার বাইরে _ 120 tk (Cart Total + 120 TK)
+                                </label>
+                            </div>
+
+
+
+                        
+                            <div class="form-item">
+                                <label class="form-label my-3">Address (থানা, জেলা, শহর) <sup>*</sup></label>
+                                <input type="text" class="form-control" placeholder="House Number Street Name" required>
+                             
+                            </div>
+                        
+                            <!-- <div class="form-item">
+                                <label class="form-label my-3">Town/City<sup>*</sup></label>
+                                <input type="text" class="form-control" required>
+                            </div> -->
+
+                        
+                            <!-- <div class="form-item">
+                                <label for="postcode">Postcode/Zip</label>
+                                <input type="text" id="postcode" name="postcode" class="form-control">
+                                
+                            </div> -->
+                        
+                        
+                        
+                            <div class="form-item">
+                                <label class="form-label my-3">Email Address<sup>*</sup></label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                        
+                            <hr>
+                            
+                            <div class="form-item">
+                                <textarea name="text" class="form-control" spellcheck="false" cols="30" rows="11" placeholder="Order Notes (any important message)"></textarea>
+                            </div>
+                        
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                
+
+        <!-- Order place korbar jonno ei div ta k bairy ancii,  kaj ses hole ei div ta .row.g-5 e bosbe -->
+
+
+        <div class="col-md-12 col-lg-6 col-xl-5">
+
+
+
+  <!-- Add Font Awesome CDN link in <head> if not already included -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
+    <div class="col-12">
+        <!-- Direct Bank Transfer Option -->
+        <div class="form-check text-start my-3">
+            <input type="checkbox" class="form-check-input bg-primary border-0" id="bank-transfer" name="payment-method" value="bank-transfer" onclick="showPaymentInfo('bank-transfer')">
+            <label class="form-check-label" for="bank-transfer">
+                <i class="fas fa-university icon-large text-primary"></i> ডাইরেক্ট ব্যাংক পেমেন্ট
+            </label>
+        </div>
+        <p id="bank-transfer-info" class="text-start text-dark" style="display: none;">আপনার পেমেন্ট করুন <strong> ইসলামী ব্যাংক অ্যাকাউন্ট: 20502920203775105 </strong> পেমেন্ট রেফারেন্স হিসেবে আপনার অর্ডার আইডি ব্যবহার করুন।</p>
+    </div>
+</div>
+
+<div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
+    <div class="col-12">
+        <!-- Mobile Transfer Option -->
+        <div class="form-check text-start my-3">
+            <input type="checkbox" class="form-check-input bg-primary border-0" id="mobile-transfer" name="payment-method" value="mobile-transfer" onclick="showPaymentInfo('mobile-transfer')">
+            <label class="form-check-label" for="mobile-transfer">
+                <i class="fas fa-mobile-alt icon-large text-success"></i> মোবাইল ট্রান্সফার (bKash, Nagad, Rocket)
+            </label>
+        </div>
+        <p id="mobile-transfer-info" class="text-start text-dark" style="display: none;">আপনার পেমেন্ট পাঠান মোবাইল নম্বর <strong>: 01884720828 </strong>, পেমেন্ট রেফারেন্স হিসেবে আপনার অর্ডার আইডি ব্যবহার করুন।</p>
+    </div>
+</div>
+
+
+<script>
+    function showPaymentInfo(option) {
+        // Hide both payment info paragraphs initially
+        document.getElementById('bank-transfer-info').style.display = 'none';
+        document.getElementById('mobile-transfer-info').style.display = 'none';
+        
+        // Show the respective payment info based on the option selected
+        if(option === 'bank-transfer') {
+            document.getElementById('bank-transfer-info').style.display = 'block';
+        } else if(option === 'mobile-transfer') {
+            document.getElementById('mobile-transfer-info').style.display = 'block';
+        }
+    }
+</script>
+
+<style>
+    /* Increase the size of icons */
+    .icon-large {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    /* Make the icons colorful */
+    .text-primary {
+        color: #007bff;
+    }
+    .text-success {
+        color: #28a745;
+    }
+</style>
+
+
+
+
+
+
+
+
+            
+            <br>
+
+            <p style="color: darkblue; font-weight: 620;">ক্যাশ অন ডেলিভারি</p>
+
+            <div class="row g-4 text-center align-items-center justify-content-center pt-4">
+                <!-- Place Order Button with Icon -->
+                <button type="button" id="place-order-btn" class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary">
+                    <i class="fas fa-shopping-cart"></i> অর্ডার প্লেস করুন
+                </button>
+            </div>
+            
+
+
+            
+            <!-- Download PDF Button with Icon -->
+            <p class="text-danger mt-5 m-3" style="color: darkblue; ">অনুগ্রহ করে অর্ডার প্লেস করার পূর্বে অর্ডার সামারি জেনারেট করবেন না,, <br> সে ক্ষেত্রে আপনার ডেলিভারি চার্জ দুইবার যুক্ত হতে পারে! (আগে অর্ডার প্লেস করুন পরবর্তীতে অর্ডার সামারি জেনারেট করুন) </p>
+            <button id="download-pdf-btn" class="btn border-secondary py-3 px-4 text-uppercase w-100 text-danger">
+                <i class="fas fa-download"></i> অর্ডার সামারি গ্রহণ করুন
+            </button>
+            
+         
+
+        </div> 
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+            </div>
+        </div>
+        <!-- Cart Page End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+
+            document.addEventListener("DOMContentLoaded", function () {
+let cartTotalElement = document.getElementById("cart-total");
+let cartTotal = parseFloat(cartTotalElement.innerText.replace('৳', '')) || 0;
+let currentAdvancePayment = false;
+let currentDeliveryLocation = null;
+
+function updateCartTotal(extraCharge = 0) {
+cartTotal += extraCharge;
+cartTotalElement.innerText = `৳${cartTotal.toFixed(2)}`;
+}
+
+function getDeliveryCharge(location) {
+return location === 'dhaka-inside' ? 60 : location === 'dhaka-outside' ? 120 : 0;
+}
+
+function updateDeliveryCharge() {
+let selectedLocation = document.querySelector('input[name="delivery-location"]:checked')?.id;
+let newDeliveryCharge = getDeliveryCharge(selectedLocation);
+let previousDeliveryCharge = getDeliveryCharge(currentDeliveryLocation);
+
+updateCartTotal(newDeliveryCharge - previousDeliveryCharge);
+currentDeliveryLocation = selectedLocation;
+}
+
+function updateCashback() {
+let isAdvance = document.getElementById('advance-yes').checked;
+let discountChange = (currentAdvancePayment ? 50 : 0) - (isAdvance ? 50 : 0);
+updateCartTotal(discountChange);
+currentAdvancePayment = isAdvance;
+}
+
+function updateCartTotalFooter() {
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+cartTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+cartTotalElement.innerText = `৳${cartTotal.toFixed(2)}`;
+}
+
+function loadCartItems() {
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cartTable = document.getElementById("cart-table-body");
+cartTable.innerHTML = cart.map(product => `
+<tr>
+<th scope="row">
+<div class="d-flex align-items-center">
+<img src="${product.image}" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="">
+</div>
+</th>
+<td><p class="mb-0 mt-4">${product.name}</p></td>
+<td><p class="mb-0 mt-4">৳${product.price}</p></td>
+<td>
+<div class="input-group quantity mt-4" style="width: 100px;">
+<button class="btn btn-sm btn-minus rounded-circle bg-light border" data-id="${product.id}"><i class="fa fa-minus"></i></button>
+<input type="text" class="form-control form-control-sm text-center border-0 quantity-input" data-id="${product.id}" value="${product.quantity}">
+<button class="btn btn-sm btn-plus rounded-circle bg-light border" data-id="${product.id}"><i class="fa fa-plus"></i></button>
+</div>
+</td>
+<td><p class="mb-0 mt-4 total-price">৳${(product.price * product.quantity).toFixed(2)}</p></td>
+<td><button class="btn btn-md rounded-circle bg-light border mt-4 remove-item" data-id="${product.id}"><i class="fa fa-times text-danger"></i></button></td>
+</tr>
+`).join('');
+
+attachCartEvents();
+updateCartTotalFooter();
+}
+
+function updateQuantity(productId, change) {
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let product = cart.find(item => item.id === productId);
+
+if (product) {
+product.quantity += change;
+if (product.quantity <= 0) {
+cart = cart.filter(item => item.id !== productId);
+}
+}
+
+localStorage.setItem("cart", JSON.stringify(cart));
+loadCartItems();
+}
+
+function attachCartEvents() {
+document.querySelectorAll(".btn-plus").forEach(btn => btn.addEventListener("click", () => updateQuantity(btn.dataset.id, 1)));
+document.querySelectorAll(".btn-minus").forEach(btn => btn.addEventListener("click", () => updateQuantity(btn.dataset.id, -1)));
+document.querySelectorAll(".remove-item").forEach(btn => btn.addEventListener("click", () => updateQuantity(btn.dataset.id, -1000)));
+
+document.querySelectorAll(".quantity-input").forEach(input => {
+input.addEventListener("change", function () {
+let newQuantity = parseInt(this.value) || 1;
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let product = cart.find(item => item.id === this.dataset.id);
+if (product) {
+product.quantity = newQuantity;
+localStorage.setItem("cart", JSON.stringify(cart));
+loadCartItems();
+}
+});
+});
+}
+
+document.querySelectorAll('input[name="delivery-location"]').forEach(radio => radio.addEventListener('change', updateDeliveryCharge));
+document.querySelectorAll('input[name="advance-payment"]').forEach(radio => radio.addEventListener('change', updateCashback));
+
+loadCartItems();
+
+// 📌 **Postcode/Zip Optional Validation**
+document.getElementById("checkout-form").addEventListener("submit", function (event) {
+let postcode = document.getElementById("postcode").value.trim();
+
+// পোস্টকোড দিলে সেটি ঠিক কিনা চেক করবে, না দিলে সমস্যা নেই
+if (postcode !== "" && !/^\d{4,10}$/.test(postcode)) {
+alert("Invalid postcode format!");
+event.preventDefault(); // ফর্ম সাবমিট বন্ধ করে দেবে
+}
+});
+
+});
+
+
+</script>
+
+
+
+
+     <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector("#place-order-btn").addEventListener("click", function () {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        if (cart.length === 0) {
+            alert("⚠️ আপনার কার্ট খালি! অনুগ্রহ করে কিছু পণ্য যোগ করুন।");
+            return;
+        }
+
+        // আজকের তারিখ
+        let today = new Date();
+        let currentDate = today.toISOString().split("T")[0]; // YYYY-MM-DD ফরম্যাটে তারিখ
+
+        // শেষ রিসেট তারিখ বের করা
+        let lastResetDate = localStorage.getItem("lastResetDate");
+
+        // যদি শেষ রিসেট করা তারিখ না থাকে, তাহলে আজকের তারিখ সেট করবো
+        if (!lastResetDate) {
+            localStorage.setItem("lastResetDate", currentDate);
+            lastResetDate = currentDate;
+        }
+
+        // তারিখ পার্থক্য বের করা
+        let lastDate = new Date(lastResetDate);
+        let differenceInDays = Math.floor((today - lastDate) / (1000 * 60 * 60 * 24));
+
+        // যদি ৩০ দিন পার হয়ে যায়, তাহলে নতুনভাবে ১০০ থেকে শুরু করবো
+        if (differenceInDays >= 30) {
+            localStorage.setItem("lastOrderNumber", 100);
+            localStorage.setItem("lastResetDate", currentDate); // নতুন রিসেট ডেট সেট করলাম
+        }
+
+        // সর্বশেষ অর্ডার নাম্বার বের করা
+        let lastOrderNumber = localStorage.getItem("lastOrderNumber");
+        let newOrderNumber = lastOrderNumber ? parseInt(lastOrderNumber) + 1 : 100;
+
+        // নতুন অর্ডার নাম্বার সংরক্ষণ করা
+        localStorage.setItem("lastOrderNumber", newOrderNumber);
+
+        // Billing Details সংগ্রহ করা
+        let name = document.querySelector(".form-control[placeholder='Your Full Name']")?.value || "N/A";
+        let mobile = document.querySelector(".form-control[type='tel']")?.value || "N/A";
+        let address = document.querySelector(".form-control[placeholder='House Number Street Name']")?.value || "N/A";
+        let city = document.querySelector(".form-control[placeholder='Your City']")?.value || "N/A";
+        let postcode = document.querySelector(".form-control#postcode")?.value || "N/A";
+        let email = document.querySelector(".form-control[type='email']")?.value || "N/A";
+        let orderNotes = document.querySelector(".form-control[spellcheck='false']")?.value || "N/A";
+
+        let deliveryLocation = document.querySelector('input[name="delivery-location"]:checked')?.value || "N/A";
+        let advancePayment = document.querySelector('input[name="advance-payment"]:checked')?.value || "No";
+
+        // Delivery Charge এবং Discount ক্যালকুলেশন
+        let deliveryCharge = deliveryLocation === "dhaka-inside" ? 60 : deliveryLocation === "dhaka-outside" ? 120 : 0;
+        let discount = advancePayment === "yes" ? 50 : 0;
+
+        // Order Message তৈরী করা
+        let orderMessage = `*🛒 নতুন অর্ডার #${newOrderNumber}*\n\n`;
+        orderMessage += `👤 *নাম:* ${name}\n📞 *মোবাইল:* ${mobile}\n🏠 *ঠিকানা:* ${address}, ${city}, ${postcode}\n📧 *ইমেইল:* ${email}\n📍 *ডেলিভারি লোকেশন:* ${deliveryLocation}\n💳 *অ্যাডভান্স পেমেন্ট:* ${advancePayment}\n\n📦 *অর্ডার তালিকা:*\n`;
+
+        let totalAmount = 0;
+
+        // কার্ট আইটেম যোগ করা
+        cart.forEach((product, index) => {
+            let productTotal = product.price * product.quantity;
+            totalAmount += productTotal;
+            orderMessage += `${index + 1}. ${product.name} - ${product.quantity} x ৳${product.price} = ৳${productTotal.toFixed(2)}\n`;
+        });
+
+        // ডেলিভারি চার্জ এবং ডিসকাউন্ট যোগ করা
+        totalAmount += deliveryCharge; // ডেলিভারি চার্জ যোগ
+        totalAmount -= discount; // ডিসকাউন্ট বিয়োগ
+
+        orderMessage += `\n🚚 *ডেলিভারি চার্জ:* ৳${deliveryCharge.toFixed(2)}\n`;
+        orderMessage += `🎁 *ডিসকাউন্ট:* ৳${discount.toFixed(2)}\n`;
+        orderMessage += `💰 *মোট মূল্য:* ৳${totalAmount.toFixed(2)}\n📝 *অতিরিক্ত নোট:* ${orderNotes}`;
+
+        // WhatsApp & Messenger লজিক
+        let whatsappNumber = "+8801636529671";
+        let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderMessage)}`;
+        let messengerID = "100063714252993"; // Shop Owner's Messenger ID
+        let messengerURL = `https://m.me/${messengerID}?text=${encodeURIComponent(orderMessage)}`;
+
+        function isAppAccessible(url, callback) {
+            let iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = url;
+            document.body.appendChild(iframe);
+
+            setTimeout(() => {
+                document.body.removeChild(iframe);
+                callback(true);
+            }, 1000);
+        }
+
+        isAppAccessible(whatsappURL, function (whatsappAvailable) {
+            if (whatsappAvailable) {
+                window.open(whatsappURL, "_blank");
+            } else {
+                isAppAccessible(messengerURL, function (messengerAvailable) {
+                    if (messengerAvailable) {
+                        window.open(messengerURL, "_blank");
+                    } else {
+                        alert("⚠️ আপনার ডিভাইসে WhatsApp বা Messenger অ্যাপ নেই। অনুগ্রহ করে অ্যাপ ইনস্টল করুন।");
+                    }
+                });
+            }
+        });
+
+        
+    });
+});
+
+
+     </script>
+
+
+
+        <script>
+
+document.querySelector("#download-pdf-btn").addEventListener("click", () => {
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF();
+
+    // Company details at the top
+    pdf.setFontSize(16);
+    const companyName = "Gift Any Time BD";
+    const companyAddress = " Narayanganj, Dhaka";
+
+    const pageWidth = pdf.internal.pageSize.width;
+    const centerX = pageWidth / 2;
+
+    pdf.text(companyName, centerX - pdf.getTextWidth(companyName) / 2, 10);
+    pdf.setFontSize(12);
+    pdf.text(companyAddress, centerX - pdf.getTextWidth(companyAddress) / 2, 15);
+
+    // Date & Memo Number
+    const currentDate = new Date().toLocaleDateString("en-GB");
+    pdf.setFontSize(10);
+    pdf.text("Date: " + currentDate, 10, 35);
+
+    let memoNumber = localStorage.getItem("memoNumber") || 101;
+    localStorage.setItem("memoNumber", parseInt(memoNumber) + 1);
+    pdf.text("Memo Number: " + memoNumber, 10, 45);
+
+    // Cart Data
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const tableData = cart.map(product => [
+        product.name,
+        `${product.price} tk`,
+        product.quantity,
+        `${(product.price * product.quantity).toFixed(2)} tk`
+    ]);
+
+    const headers = ["Product Name", "Price", "Quantity", "Total"];
+
+    pdf.autoTable({
+        head: [headers],
+        body: tableData,
+        startY: 55,
+    });
+
+    // Billing Details
+    let name = document.querySelector(".form-control[placeholder='Your Full Name']")?.value || "N/A";
+    let mobile = document.querySelector(".form-control[type='tel']")?.value || "N/A";
+    let address = document.querySelector(".form-control[placeholder='House Number Street Name']")?.value || "N/A";
+    let city = document.querySelector(".form-control[placeholder='Your City']")?.value || "N/A";
+    let postcode = document.querySelector(".form-control#postcode")?.value || "N/A";
+    let email = document.querySelector(".form-control[type='email']")?.value || "N/A";
+    let orderNotes = document.querySelector(".form-control[spellcheck='false']")?.value || "N/A";
+
+    let deliveryLocation = document.querySelector('input[name="delivery-location"]:checked')?.value || "N/A";
+    let advancePayment = document.querySelector('input[name="advance-payment"]:checked')?.value || "No";
+
+    let deliveryCharge = deliveryLocation === "dhaka-inside" ? 60 : deliveryLocation === "dhaka-outside" ? 120 : 0;
+    let discount = advancePayment === "yes" ? 50 : 0;
+
+    // Billing details added to PDF
+    pdf.setFontSize(12);
+    pdf.text("Billing Details:", 10, pdf.lastAutoTable.finalY + 10);
+
+    pdf.text("Name: " + name, 10, pdf.lastAutoTable.finalY + 20);
+    pdf.text("Mobile: " + mobile, 10, pdf.lastAutoTable.finalY + 30);
+    pdf.text("Address: " + address + ", " + city + ", " + postcode, 10, pdf.lastAutoTable.finalY + 40);
+    pdf.text("Email: " + email, 10, pdf.lastAutoTable.finalY + 50);
+    pdf.text("Delivery Location: " + deliveryLocation, 10, pdf.lastAutoTable.finalY + 60);
+    pdf.text("Advance Payment: " + advancePayment, 10, pdf.lastAutoTable.finalY + 70);
+    pdf.text("Order Notes: " + orderNotes, 10, pdf.lastAutoTable.finalY + 80);
+
+    // Delivery charge, discount, and total amount
+    const totalAmount = tableData.reduce((sum, row) => sum + parseFloat(row[3]), 0);
+    let finalAmount = totalAmount + deliveryCharge - discount;
+
+    pdf.setFontSize(12);
+    pdf.text("Delivery Charge: " + `${deliveryCharge.toFixed(2)} tk`, 10, pdf.lastAutoTable.finalY + 90);
+    pdf.text("Discount: " + `${discount.toFixed(2)} tk`, 10, pdf.lastAutoTable.finalY + 100);
+
+    // Highlight total amount in yellow
+    pdf.setTextColor(0);
+    pdf.setFillColor(255, 255, 0); // Yellow color
+    pdf.rect(10, pdf.lastAutoTable.finalY + 110, 190, 10, 'F'); // Rectangle background for the total amount
+    pdf.setTextColor(0, 0, 0); // Reset text color to black
+    pdf.text("Total Amount: " + `${finalAmount.toFixed(2)} tk`, 10, pdf.lastAutoTable.finalY + 115);
+
+    // Save PDF
+    pdf.save("order-summary.pdf");
+});
+
+
+        </script>
+
+
+
+
+
+        <!-- Tastimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+
+
+                <div class="testimonial-header text-center">
+                    <h4 class="text-primary">Our Testimonial</h4>
+                    <h1 class=" mb-5 text-dark">আমাদের ক্লায়েন্টদের রিভিউ!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+
+
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">জামদানি শাড়ি
+                         "অসাধারণ শাড়ি! ডিজাইন খুবই সুন্দর এবং আরামদায়ক।"
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/staff/maria brankovic.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Mara Brankovic</h4>
+                                    <p class="m-0 pb-3">Weeding Planner</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">আমার বিয়ে উপলক্ষে জামদানি শাড়ি কিনেছিলাম, খুব ভালো মানের।" "খুবই ভালো কাপড়, রঙের সমন্বয়ও দারুণ।"
+                                    
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/staff/Nisha Choudhury.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Nishi K</h4>
+                                    <p class="m-0 pb-3">House Wife</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">চুড়ি আর হিজাবের সেটটি একদম মনের মতো। বেশ আরামদায়ক। আমার বউ ভীষণ পছন্দ করছে
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/staff/Ibrahim.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Ibrahim Khalil</h4>
+                                    <p class="m-0 pb-3">Degital Creator</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tastimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid text-white-50 footer pt-1 mt-1">
+            <div class="container py-1">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <h3 class="text-info mt-2">Gift Any Time BD</h1>
+                                <p class="text-secondary mb-0">eCommerce Based Sharee Panjabi & Hijab Shop in BD</p>
+                            </a>
+                        </div>
+
+
+                        <div class="col-lg-6">
+
+
+                            <div class="position-relative mx-auto mt-2" style="max-width: 400px;">
+                                <input id="emailInput" class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="email" placeholder="Your Email">
+                                <a id="emailLink" href="#" class="btn btn-info border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</a>
+                            </div>
+                            
+                            <script>
+                                document.getElementById("emailLink").addEventListener("click", function(event) {
+                                    event.preventDefault(); // Prevent the default action
+                                    let userEmail = document.getElementById("emailInput").value;
+                            
+                                    // Email validation
+                                    let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                                    if (!emailRegex.test(userEmail)) {
+                                        alert("Enter a valid email!");
+                                        return;
+                                    }
+                            
+                                    // Construct the mailto link and set it as the href attribute
+                                    let mailtoLink = `mailto:ferdous2024@gmail.com?subject=New Subscriber&body=New subscriber email: ${userEmail}`;
+                                    this.setAttribute("href", mailtoLink);
+                                    // Optionally trigger the email sending process
+                                    window.location.href = mailtoLink;
+                                });
+                            </script>
+                            
+                            
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex justify-content-end pt-3">
+                              
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" target="_blank" href="https://www.facebook.com/share/15TbCDqdxu/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" target="_blank" href="https://wa.me/8801884720828"><i class="fab fa-whatsapp"></i></a>
+
+       
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Why People Like us!</h4>
+                            <p class="mb-4">আমরা উচ্চমানের পণ্য এবং সেবা প্রদান করি, যেখানে গ্রাহক সন্তুষ্টি আমাদের সর্বোচ্চ অগ্রাধিকার। আমাদের নিষ্ঠা এবং দক্ষতা 
+                            </p>
+                            <a href="#" class="btn border-secondary py-2 px-4 rounded-pill text-info">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Shop Info</h4>
+                            <a class="btn-link" href="#">About Us</a>
+                            <a class="btn-link" href="#">Contact Us</a>
+                            <a class="btn-link" href="#">Privacy Policy</a>
+                            <a class="btn-link" href="#">Terms & Condition</a>
+                            <a class="btn-link" href="#">Return Policy</a>
+                            <a class="btn-link" href="#">FAQs & Help</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Account</h4>
+                            <a class="btn-link" href="#">My Account</a>
+                            <a class="btn-link" href="#">Shop details</a>
+                            <a class="btn-link" href="#">Shopping Cart</a>
+                            <a class="btn-link" href="#">Wishlist</a>
+                            <a class="btn-link" href="#">Order History</a>
+                            <a class="btn-link" href="#">International Orders</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Contact</h4>
+                            <p>Address: 1429 Netus Rd, NY 48247</p>
+                            <p>Email: <a href="mailto:mdmohsin1717@gmail.com">mdmohsin1717@gmail.com</a></p>
+                            <p>Phone: <a href="tel:+8801884720828">+88 01884720828</a> (WhatsApp, bKash, Nogod, Rocket)</p>
+                            <p>Islami Bank Account: 20502920203775105</p>
+                            <a href="https://www.facebook.com/share/15TbCDqdxu/?mibextid=wwXIfr" target="_blank" class="btn btn-primary py-2 px-4 rounded-pill text-white">Share on Facebook</a>
+                          
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Gift Any Time BD</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://anilsworld.shop/">Ferdous</a> Distributed By <a class="border-bottom" href="https://elitemsy.com/">Anils World</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+
+        <div class="floating-contact">
+            <a href="#" class="help-button" id="helpButton">
+              <i class="bi bi-question-circle"></i>
+            </a>
+            <div class="contact-options" id="contactOptions">
+              <a
+                href="tel:+8801884720828"
+                class="phone-call margeIcon"
+                target="_blank"
+              >
+                <i class="bi bi-telephone-fill"></i>
+              </a>
+              <a
+                href="https://wa.me/+8801884720828"
+                class="whatsapp-message margeIcon"
+                target="_blank"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a
+                href="mailto:help@giftanytimebd.com"
+                class="email-message margeIcon"
+                target="_blank"
+              >
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+    
+        <!-- Back to Top -->
+        <!-- <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>    -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.30/jspdf.plugin.autotable.min.js"></script>
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

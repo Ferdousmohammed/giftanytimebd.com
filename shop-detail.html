@@ -1,0 +1,742 @@
+<!-- <!DOCTYPE html>
+
+
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Fruitables - Vegetable Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Mukti:wght@400;700&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+   
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+      
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+     
+        <link href="css/style.css" rel="stylesheet">
+
+          
+          <script type="text/javascript">
+          var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+         (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/67daaf87b568d019092fc1f0/1imn3rb31'; 
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+
+    </head>
+
+    <body>
+
+      
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        
+
+        
+
+      
+<div class="fixed-top">
+    <div class="container-fluid topbar bg-info d-none d-lg-block">
+        <div class="d-flex justify-content-between">
+            <div class="top-info ps-2">
+                <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-white"></i> <a href="#" class="text-white">Narayanganj, Dhaka</a></small>
+                <small class="me-3">
+                    <i class="fab fa-whatsapp me-2 text-white"></i>
+                    <a href="https://wa.me/01884720828" class="text-white">01884720828</a>
+                </small>
+            </div>
+            <div class="top-link pe-2">
+                <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+                <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-xl navbar-custom">
+            <a href="index.html" class="navbar-brand">
+                <img class="logoImg" src="img/company logo/gift_any_time_logo-removebg-preview.png" alt="Gift Any Time BD">
+            </a>
+
+            <button class="navbar-toggler py-3 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="shop.html" class="nav-item nav-link">Shop</a>
+                   
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="cart.html" class="dropdown-item">Cart</a>
+                        
+                            <a href="shop.html" class="dropdown-item">শাড়ি (জামদানি + কাতান)</a>
+                            <a href="studentcombo.html" class="dropdown-item">স্টুডেন্ট শাড়ি কম্বো</a>
+                            <a href="hijab&churi.html" class="dropdown-item">হিজাব ও চুড়ি কম্বো</a>
+                            
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                     <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
+                </div>
+
+                <div class="d-flex m-3 me-0">
+                    <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search text-primary"></i>
+                    </button>
+                    <a href="cart.html" class="position-relative me-4 my-auto">
+                        <i class="fa fa-shopping-cart fa-2x"></i>
+                        <span id="cart-count" class="position-absolute bg-white rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    
+    <div class="d-block d-xl-none text-center py-2 bg-black">
+        <a href="cart.html" class="btn btn-primary w-100">
+            <i class="fa fa-shopping-cart me-2"></i> View Cart
+        </a>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search for a category...">
+                <ul id="categoryList" class="list-unstyled mt-2"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    #categoryList {
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        background-color: #f8f9fa;
+        top: 55px;
+    }
+
+    .category-item {
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .category-item:hover {
+        background-color: rgb(58, 81, 81);
+        color: #fff;
+    }
+
+    .category-item.active {
+        background-color: #19ce43;
+        color: #fff;
+    }
+
+    @media (max-width: 1000px) {
+        .carousel-container {
+            transition: transform 0.3s ease;
+        }
+        .carousel-move-down {
+            transform: translateY(220px);
+        }
+    }
+</style>
+
+<script>
+const categories = [
+    { name: 'Hijab Combo', category: 'hijab', image: 'img/Hero img/premium Hijab combo.jpg' },
+    { name: 'Silk Jamdani Combo', category: 'hijab', image: 'img/Hero img/premium Jamdani.jpg' },
+    { name: 'Churi + Hijab Combo', category: 'panjabi', image: 'img/products/product for hero image/churi hijab combo.jpg' },
+    { name: 'Soft Silk Katan Combo', category: '3pis', image: 'img/Hero img/Soft Silk Katan.jpg' }
+];
+
+const categoryList = document.getElementById('categoryList');
+const searchInput = document.getElementById('searchInput');
+
+
+searchInput.addEventListener('focus', () => {
+    categoryList.style.display = 'block';
+    updateCategoryList();
+});
+
+
+document.addEventListener('click', (e) => {
+    if (!categoryList.contains(e.target) && e.target !== searchInput) {
+        categoryList.style.display = 'none';
+    }
+});
+
+
+function updateCategoryList() {
+    categoryList.innerHTML = '';
+    categories.forEach(category => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('category-item');
+        listItem.textContent = category.name;
+        listItem.addEventListener('click', () => {
+            window.location.href = `shop.html?category=${category.category}`;
+        });
+        categoryList.appendChild(listItem);
+    });
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const searchModal = new bootstrap.Modal(document.getElementById('searchModal'));
+    searchModal._element.addEventListener('hidden.bs.modal', function () {
+        categoryList.style.display = 'none';
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+    
+        <div class="container-fluid page-header py-5 ">
+            <h1 class="text-center text-white mt-4">Shop Detail</h1>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-white">Shop Detail</li>
+            </ol>
+        </div>
+    
+
+
+
+
+
+     
+        <div class="container-fluid py-5 mt-5">
+            <div class="container py-5">
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-8 col-xl-9">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="border rounded">
+                                    <a href="#">
+                                        <img src="img/single-item.jpg" class="img-fluid rounded" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h4 class="fw-bold mb-3">Brocoli</h4>
+                                <p class="mb-3">Category: Vegetables</p>
+                                <h5 class="fw-bold mb-3">3,35 $</h5>
+                                <div class="d-flex mb-4">
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="mb-4">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p>
+                                <p class="mb-4">Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish</p>
+                                <div class="input-group quantity mb-5" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <nav>
+                                </nav>
+                                <div class="tab-content mb-5">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="row g-4 fruite">
+
+
+                            <div class="col-lg-12">
+                                <div class="position-relative">
+                                    <img src="img/banner-fruits.jpg" class="img-fluid w-100 rounded" alt="">
+                                    <div class="position-absolute" style="top: 50%; right: 10px; transform: translateY(-50%);">
+                                        <h3 class="text-secondary fw-bold">Fresh <br> Fruits <br> Banner</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+
+
+                    </div>
+                </div>
+                <h1 class="fw-bold mb-0">Related products</h1>
+                <div class="vesitable">
+                    <div class="owl-carousel vegetable-carousel justify-content-center">
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4>Parsely</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold">$4.99 / kg</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4>Parsely</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold">$4.99 / kg</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="img/vegetable-item-3.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4>Banana</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="img/vegetable-item-4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4>Bell Papper</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4>Potatoes</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4>Parsely</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4>Potatoes</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4>Parsely</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+
+    
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+
+
+                <div class="testimonial-header text-center">
+                    <h4 class="text-primary">Our Testimonial</h4>
+                    <h1 class=" mb-5 text-dark">আমাদের ক্লায়েন্টদের রিভিউ!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+
+
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">জামদানি শাড়ি
+                         "অসাধারণ শাড়ি! ডিজাইন খুবই সুন্দর এবং আরামদায়ক।"
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/staff/maria brankovic.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Mara Brankovic</h4>
+                                    <p class="m-0 pb-3">Weeding Planner</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">আমার বিয়ে উপলক্ষে জামদানি শাড়ি কিনেছিলাম, খুব ভালো মানের।" "খুবই ভালো কাপড়, রঙের সমন্বয়ও দারুণ।"
+                                    
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/staff/Nisha Choudhury.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Nishi K</h4>
+                                    <p class="m-0 pb-3">House Wife</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">চুড়ি আর হিজাবের সেটটি একদম মনের মতো। বেশ আরামদায়ক। আমার বউ ভীষণ পছন্দ করছে
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/staff/Ibrahim.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Ibrahim Khalil</h4>
+                                    <p class="m-0 pb-3">Degital Creator</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+
+
+    
+        <div class="container-fluid text-white-50 footer pt-1 mt-1">
+            <div class="container py-1">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <h3 class="text-info mt-2">Gift Any Time BD</h1>
+                                <p class="text-secondary mb-0">eCommerce Based Sharee Panjabi & Hijab Shop in BD</p>
+                            </a>
+                        </div>
+
+
+                        <div class="col-lg-6">
+
+
+                            <div class="position-relative mx-auto mt-2" style="max-width: 400px;">
+                                <input id="emailInput" class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="email" placeholder="Your Email">
+                                <a id="emailLink" href="#" class="btn btn-info border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</a>
+                            </div>
+                            
+                            <script>
+                                document.getElementById("emailLink").addEventListener("click", function(event) {
+                                    event.preventDefault(); // Prevent the default action
+                                    let userEmail = document.getElementById("emailInput").value;
+                            
+                                    // Email validation
+                                    let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                                    if (!emailRegex.test(userEmail)) {
+                                        alert("Enter a valid email!");
+                                        return;
+                                    }
+                            
+                                    // Construct the mailto link and set it as the href attribute
+                                    let mailtoLink = `mailto:ferdous2024@gmail.com?subject=New Subscriber&body=New subscriber email: ${userEmail}`;
+                                    this.setAttribute("href", mailtoLink);
+                                    // Optionally trigger the email sending process
+                                    window.location.href = mailtoLink;
+                                });
+                            </script>
+                            
+                            
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex justify-content-end pt-3">
+                              
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" target="_blank" href="https://www.facebook.com/share/15TbCDqdxu/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" target="_blank" href="https://wa.me/8801884720828"><i class="fab fa-whatsapp"></i></a>
+
+       
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Why People Like us!</h4>
+                            <p class="mb-4">আমরা উচ্চমানের পণ্য এবং সেবা প্রদান করি, যেখানে গ্রাহক সন্তুষ্টি আমাদের সর্বোচ্চ অগ্রাধিকার। আমাদের নিষ্ঠা এবং দক্ষতা 
+                            </p>
+                            <a href="#" class="btn border-secondary py-2 px-4 rounded-pill text-info">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Shop Info</h4>
+                            <a class="btn-link" href="#">About Us</a>
+                            <a class="btn-link" href="#">Contact Us</a>
+                            <a class="btn-link" href="#">Privacy Policy</a>
+                            <a class="btn-link" href="#">Terms & Condition</a>
+                            <a class="btn-link" href="#">Return Policy</a>
+                            <a class="btn-link" href="#">FAQs & Help</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Account</h4>
+                            <a class="btn-link" href="#">My Account</a>
+                            <a class="btn-link" href="#">Shop details</a>
+                            <a class="btn-link" href="#">Shopping Cart</a>
+                            <a class="btn-link" href="#">Wishlist</a>
+                            <a class="btn-link" href="#">Order History</a>
+                            <a class="btn-link" href="#">International Orders</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Contact</h4>
+                            <p>Address: 1429 Netus Rd, NY 48247</p>
+                            <p>Email: <a href="mailto:mdmohsin1717@gmail.com">mdmohsin1717@gmail.com</a></p>
+                            <p>Phone: <a href="tel:+8801884720828">+88 01884720828</a> (WhatsApp, bKash, Nogod, Rocket)</p>
+                            <p>Islami Bank Account: 20502920203775105</p>
+                            <a href="https://www.facebook.com/share/15TbCDqdxu/?mibextid=wwXIfr" target="_blank" class="btn btn-primary py-2 px-4 rounded-pill text-white">Share on Facebook</a>
+                          
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+        </div>
+  
+
+       
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Gift Any Time BD</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                 
+           
+                        Designed By <a class="border-bottom" href="https://anilsworld.shop/">Ferdous</a> Distributed By <a class="border-bottom" href="https://elitemsy.com/">Anils World</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+        <div class="floating-contact">
+            <a href="#" class="help-button" id="helpButton">
+              <i class="bi bi-question-circle"></i>
+            </a>
+            <div class="contact-options" id="contactOptions">
+              <a
+                href="tel:+8801884720828"
+                class="phone-call margeIcon"
+                target="_blank"
+              >
+                <i class="bi bi-telephone-fill"></i>
+              </a>
+              <a
+                href="https://wa.me/+8801884720828"
+                class="whatsapp-message margeIcon"
+                target="_blank"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a
+                href="mailto:help@giftanytimebd.com"
+                class="email-message margeIcon"
+                target="_blank"
+              >
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+    
+
+
+    
+        
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+    </body>
+
+</html> -->
+
+work  will start soon inshallah
